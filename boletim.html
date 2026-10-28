@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"> Portal do Aluno</div>
+        <p>Área de consulta de notas</p>
+    </header>
+
+    <main class="container">
+        <center>
+            <h1>Boletim Escolar</h1>
+            <p>Informe seu nome e suas duas notas.</p>
+        </center>
+
+        <form id="formulario">
+            <label for="nome">Nome do aluno:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+
+            <label for="nota1">Primeira nota (0 a 10):</label>
+            <input type="number" id="nota1" min="0" max="10"
+                   step="any" placeholder="Ex.: 8.5">
+
+            <label for="nota2">Segunda nota (0 a 10):</label>
+            <input type="number" id="nota2" min="0" max="10"
+                   step="any" placeholder="Ex.: 7.0">
+
+            <div class="botoes">
+                <button type="button" id="btnMedia">MÉDIA</button>
+                <button type="button" id="btnSituacao">SITUAÇÃO</button>
+                <button type="button" id="btnLimpar">LIMPAR</button>
+            </div>
+        </form>
+
+        <section id="resultado" class="resultado" aria-live="polite">
+            <h2>Resultado</h2>
+            <p>Nome do aluno: <span id="resultadoNome">---</span></p>
+            <p>Média obtida: <span id="resultadoMedia">---</span></p>
+            <p>Situação: <span id="resultadoSituacao">---</span></p>
+            <p id="mensagemErro" role="alert"></p>
+        </section>
+
+        <a href="sobre.html" class="link">Acessar outra página →</a>
+    </main>
+
+    <footer>
+        <p>Portal do aluno</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

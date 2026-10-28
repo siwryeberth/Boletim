@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Login</title>
+
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <center><h1 class="logo">Portal do aluno</h1>
+        <h1>Área de Login</h1>
+        <p class="subtitulo">Informe seus dados para acessar</p></center>
+
+        <form id="formLogin">
+
+            <div class="campo">
+                <label for="login">Login:</label>
+                <input type="text" id="login" placeholder="Digite seu login"
+                    autocomplete="username" required><br><br>
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" placeholder="Digite sua senha"
+                    autocomplete="current-password" required><br><br>
+            </div>
+
+            <div class="botoes">
+                <button type="submit" id="confirmar">CONFIRMAR</button>
+                <button type="button" id="cancelar">CANCELAR</button>
+                <button type="button" id="limpar">LIMPAR</button>
+            </div>
+
+        </form>
+        <p id="mensagem"></p>
+        <p id="tentativas">Tentativas disponíveis: 3</p>
+        <footer>Aula de WEB.</footer>
+
+    </div>
+</body>
+</html>

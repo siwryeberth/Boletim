@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Portal do Aluno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"> Portal do Aluno</div>
+        <p>Informações do projeto</p>
+    </header>
+
+    <main class="container">
+        <center>
+        <h1>Segunda Página</h1>
+        <p>Bem-vindo à segunda página do Portal do Aluno!</p>
+        </center>
+
+        <section class="resultado">
+            <h2>Data e hora atual</h2>
+            <p id="dataHora"></p>
+        </section>
+
+        <a href="boletim.html" class="link">
+            ← Voltar para a página principal
+        </a>
+    </main>
+
+    <footer>
+        <p>Portal do aluno</p>
+    </footer>
+
+    <script>
+        function atualizarDataHora() {
+            const agora = new Date();
+
+            document.getElementById("dataHora").textContent =
+                agora.toLocaleString("pt-BR");
+        }
+
+        atualizarDataHora();
+        setInterval(atualizarDataHora, 1000);
+    </script>
+
+</body>
+</html>
